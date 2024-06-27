@@ -4,11 +4,11 @@ import NavItem from "./Navitem";
 function Navbar() {
     return (
         <div className="navbar">
-            <NavItem name="Home" />
-            <NavItem name="About us" />
-            <NavItem name="Contact us" />
-            <NavItem name="Login" />
-            <NavItem name="Register" />
+            <NavItem name="Home" to="/" />
+            <NavItem name="About us" to="/about" />
+            <NavItem name="Contact us" to="/contact" />
+            <NavItem name="Login" to="/login" />
+            <NavItem name="Register" to="/register" />
         </div>
     );
 }

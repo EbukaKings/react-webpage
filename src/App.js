@@ -5,11 +5,15 @@ import NavBar from "./Navbar";
 import NavItem from "./Navitem";
 import Card from "./components/card";
 import About from "./components/about";
-// import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import { Link } from "react-router-dom";
+import NewNav from "./components/newnav"
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+// import { Link } from "react-router-dom";
+//import Home from "./Home"
+
 
 
 import "./project.css";
+import Check from "./components/check";
 
 function App() {
   var header = {
@@ -18,9 +22,16 @@ function App() {
     backgroundColor:"green"
   };
   return (
+    // <Router>
     <div>
+      <NewNav />
+      <Check  isGoal={false}/>
+      <Check  isGoal={false}/>
       <Header />
       <NavBar />
+      {/* <switch> */}
+      {/* <Route path="/about" component={About} /> */}
+      {/* </switch> */}
 
       <div className="container-fluid">
         <div className="row">
@@ -35,6 +46,8 @@ function App() {
       <About />
       </div>
     </div>
+    
+    // </Router>
   )
 };
 export default App;
